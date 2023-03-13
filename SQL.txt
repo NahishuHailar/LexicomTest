@@ -1,0 +1,15 @@
+{'Заказчики': 'customers', 'Города': 'cities', 'Заказчик.Название': 'name'
+ 'Города.название': 'title', 'Код': 'id', 'Код города': 'cities_id'}
+
+
+4.1
+SELECT customers.name, cities.title
+FROM customers JOIN cities ON customers.cities_id = cities.id
+
+4.2
+SELECT customers.name, cities.title
+FROM customers LEFT JOIN cities ON customers.cities_id = cities.id
+
+4.3
+SELECT customers.name, cities.title
+FROM customers RIGHT JOIN cities ON customer.cities_id = cities.id
